@@ -1,17 +1,42 @@
+/** 
+This CSS snippet defines the box-sizing property for the entire HTML document. 
+The border-box value ensures that padding and borders are included in the element's total width and height
+*/
+
 html {
     box-sizing: border-box;
 }
+
+/**
+The universal selector *, 
+along with ::before and ::after pseudo-elements, 
+inherit the box-sizing property from the HTML root, 
+ensuring a consistent box model throughout the document.
+*/
 
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
+/**
+This CSS styles the .logo class. 
+It sets the width of the logo to 150px and positions it absolutely within its containing element. 
+The top property positions it 23px from the top of the element.
+*/
 .logo {
     width: 150px;
     position: absolute;
     top: 23px;
 }
 
+/**
+The #piano selector styles the "piano" container. 
+It sets the background color to a dark green, 
+specifies its width and height, 
+adds margin for positioning, 
+padding for spacing inside the container, 
+and a rounded border radius.
+*/
 #piano {
     background-color: #00471b;
     width: 358px;
@@ -22,6 +47,12 @@ html {
     border-radius: 10px;
 }
 
+/**
+The .keys class styles the container for the piano keys. 
+It sets the background color to black, 
+defines its width and height, 
+adds a slight left padding, 
+and hides any overflowing content.*/
 .keys {
     background-color: #040404;
     width: 318px;
@@ -30,6 +61,14 @@ html {
     overflow: hidden;
 }
 
+/**
+The .key class styles the white piano keys. 
+It sets the background color to white, 
+positions the key relatively within its containing element, 
+sets width and height, adds margin for spacing between keys, 
+floats the keys to the left, 
+and adds a border radius to the bottom corners.
+*/
 .key {
     background-color: #ffffff;
     position: relative;
@@ -40,6 +79,14 @@ html {
     border-radius: 0 0 3px 3px;
 }
 
+/**
+The .black--key class is a pseudo-element that represents the black piano keys. 
+It adds a dark background color, 
+positions the pseudo-element absolutely, 
+sets its position to the left of the key, 
+specifies width and height for the black key, 
+and applies a border radius to the bottom corners to match the shape of the white keys.
+*/
 .key.black--key::after {
     background-color: #1d1e22;
     content: "";
