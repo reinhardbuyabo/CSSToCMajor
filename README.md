@@ -7,3 +7,6 @@ This code creates a visual representation of a piano interface using HTML and CS
 </p>
 
 Just For Fun, here's **piano on a breadboard**: [Tinkercad Design of a Simple Electric Piano](https://www.tinkercad.com/things/l6g1bcUAr84-simple-electric-piano)
+
+### Miscellaneous To Do List
+- [ ] Adding Event Listeners
